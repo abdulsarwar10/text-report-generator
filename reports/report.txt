@@ -1,0 +1,8 @@
+System Report - Wed Jun  4 15:39:40 EDT 2025
+User: 
+Hostname: DESKTOP-5F138P4
+Uptime: Not available on this system
+Disk Usage:
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  234G  185G   50G  79% /
+D:                    224G   30G  195G  14% /d
