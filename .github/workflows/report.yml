@@ -1,0 +1,23 @@
+name: Generate & Upload Report
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Report Script
+        run: |
+          chmod +x generate_report.sh
+          ./generate_report.sh
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: system-report
+          path: reports/report.txt
+          retention-days: 10
